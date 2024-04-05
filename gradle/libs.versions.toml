@@ -14,7 +14,7 @@ twilight = "1.0.30"
 lamp = "3.1.7"
 cloud = "1.8.4"
 
-adventure = "4.14.0"
+adventure-api = "4.16.0"
 adventure-platform-bukkit = "4.3.2"
 
 [libraries]
@@ -34,7 +34,7 @@ lamp-common = { module = "com.github.Revxrsal.Lamp:common", version.ref = "lamp"
 lamp-bukkit = { module = "com.github.Revxrsal.Lamp:bukkit", version.ref = "lamp" }
 lamp-brigadier = { module = "com.github.Revxrsal.Lamp:brigadier", version.ref = "lamp" }
 
-adventure = { module = "net.kyori:adventure", version.ref = "adventure" }
+adventure-api = { module = "net.kyori:adventure-api", version.ref = "adventure-api" }
 adventure-text-minimessage = { module = "net.kyori:adventure-text-minimessage", version.ref = "adventure" }
 adventure-platform-bukkit = { module = "net.kyori:adventure-platform-bukkit", version.ref = "adventure-platform-bukkit" }
 
