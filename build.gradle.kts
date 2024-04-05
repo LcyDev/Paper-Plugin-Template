@@ -50,6 +50,12 @@ dependencies {
     implementation(libs.lamp.common)
     implementation(libs.lamp.bukkit)
     implementation(libs.lamp.brigadier)
+
+// External libraries
+//    implementation(libs.netty.codec)
+//    implementation(libs.netty.codec.http)
+//    implementation(libs.netty.handler)
+//    implementation(libs.mysql.connector)
 }
 val pluginName = providers.gradleProperty("plugin_name").get()
 val minecraftVersion = providers.gradleProperty("minecraft_version").get()
