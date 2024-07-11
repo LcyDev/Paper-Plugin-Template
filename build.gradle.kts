@@ -9,7 +9,10 @@ group = providers.gradleProperty("group").get()
 version = providers.gradleProperty("plugin_version").get()
 description = providers.gradleProperty("plugin_description").get()
 
+val pluginName = providers.gradleProperty("plugin_name").get()
+val minecraftVersion = providers.gradleProperty("minecraft_version").get()
 val serverVersion = providers.gradleProperty("server_version").get()
+val javaVersion: Int = providers.gradleProperty("java_version").get().toInt()
 
 ext {
     set ("kotlin_version", libs.versions.kotlin.get())
@@ -57,9 +60,6 @@ dependencies {
 //    implementation(libs.netty.handler)
 //    implementation(libs.mysql.connector)
 }
-val pluginName = providers.gradleProperty("plugin_name").get()
-val minecraftVersion = providers.gradleProperty("minecraft_version").get()
-val javaVersion: Int = providers.gradleProperty("java_version").get().toInt()
 
 tasks {
     build { dependsOn(shadowJar) }
