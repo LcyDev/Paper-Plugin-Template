@@ -16,7 +16,6 @@ class PluginTemplate : JavaPlugin() {
         instance = this
     }
 
-
     override fun onEnable() {
         twilight(this) { }
 
